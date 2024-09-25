@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.9">
+ <project-name>Atividade Luciano 2</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Connection Type" value="MySQL" />
+   <property key="Logical" value="PlayPen Database" />
+   <property key="JDBC URL" value="jdbc:mysql://localhost:3306/" />
+   <property key="UID" value="root" />
+   <property key="PWD" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.database" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.port" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.hostname" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.login" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.password" value="" />
+  </data-source>
+  <data-source id="DS0">
+   <property key="Connection Type" value="MySQL" />
+   <property key="Logical" value="PlayPen Database" />
+   <property key="JDBC URL" value="jdbc:mysql://localhost:3306/" />
+   <property key="UID" value="root" />
+   <property key="PWD" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.database" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.port" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.hostname" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.login" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.password" value="" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+  <database id="DB0" populated="true" UUID="10a1f4a6-6e2c-4cdd-8814-b11dc25a69a5" dbcs-ref="DS0" name="PlayPen Database" physicalName="MySQL" >
+   <catalog id="CAT1" populated="false" UUID="9c6b9fd8-ecc3-4282-bda9-709085bb7362" name="acme" nativeTerm="database" physicalName="acme" >
+   </catalog>
+   <catalog id="CAT2" populated="false" UUID="f0b35f90-abad-4e18-a379-d74159e190fb" name="aula_centralcultural" nativeTerm="database" physicalName="aula_centralcultural" >
+   </catalog>
+   <catalog id="CAT3" populated="false" UUID="a1347096-ee24-4d82-a3a6-8f7819a21cb6" name="aula_senac" nativeTerm="database" physicalName="aula_senac" >
+   </catalog>
+   <catalog id="CAT4" populated="false" UUID="91b56768-b660-48d9-adc3-e503fc930ff3" name="aulasenac_uc9" nativeTerm="database" physicalName="aulasenac_uc9" >
+   </catalog>
+   <catalog id="CAT5" populated="false" UUID="38d642e7-b980-4ad0-9cac-ea4155d7a909" name="avaliacao" nativeTerm="database" physicalName="avaliacao" >
+   </catalog>
+   <catalog id="CAT6" populated="false" UUID="1813793b-d16a-41f9-a376-f4cc8d5befc1" name="bdaula" nativeTerm="database" physicalName="bdaula" >
+   </catalog>
+   <catalog id="CAT7" populated="false" UUID="88daebea-9f7e-4148-8a9c-9d78aac70083" name="cadastroaula" nativeTerm="database" physicalName="cadastroaula" >
+   </catalog>
+   <catalog id="CAT8" populated="true" UUID="b925d804-7255-4a99-8381-9740beab0762" name="central_cultural" nativeTerm="database" physicalName="central_cultural" >
+    <table id="TAB9" populated="true" UUID="5007afe0-d0ec-461e-9c84-acc45a01a102" name="cargo" objectType="TABLE" physicalName="cargo" >
+     <remarks></remarks>
+     <folder id="FOLTAB91" populated="true" name="Columns" physicalName="Columns" type="1">
+      <column id="COL10" populated="true" UUID="a2478ae7-227e-4e5d-97c4-d5145e964392" autoIncrement="true" name="id" nullable="0" physicalName="id" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="INT" type="4" >
+       <remarks></remarks>
+      </column>
+      <column id="COL11" populated="true" UUID="fd552c17-f234-42f8-ad13-0ce59892ece2" autoIncrement="false" name="nome" nullable="1" physicalName="nome" precision="30" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+       <remarks></remarks>
+      </column>
+      </folder>
+      <folder id="FOLTAB93" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+      </folder>
+      <folder id="FOLTAB92" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+      </folder>
+      <folder id="FOLTAB94" populated="true" name="Indices" physicalName="Indices" type="4">
+      <index id="IDX12" populated="true" UUID="7b42cff0-ec91-4ad3-b886-c93f44b2c0d6" clustered="false" name="cargo_PK" physicalName="cargo_PK" primaryKeyIndex="true" qualifier="" unique="true" >
+       <index-column id="IDC13" populated="true" UUID="e8123840-058f-44eb-a5eb-d50d8cf6a72f" ascendingOrDescending="UNSPECIFIED" column-ref="COL10" name="id" physicalName="id" />
+      </index>
+     </folder>
+    </table>
+    <table id="TAB14" populated="true" UUID="f299862d-48c6-4688-9492-2e87263b95de" name="clientes" objectType="TABLE" physicalName="clientes" >
+     <remarks></remarks>
+     <folder id="FOLTAB141" populated="true" name="Columns" physicalName="Columns" type="1">
+      <column id="COL15" populated="true" UUID="53284532-a304-4d8b-8b86-7507f640203b" autoIncrement="true" name="id_cliente" nullable="0" physicalName="id_cliente" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="INT" type="4" >
+       <remarks></remarks>
+      </column>
+      <column id="COL16" populated="true" UUID="17a15ff2-c0f0-40be-bb16-b12266fce206" autoIncrement="false" name="nome" nullable="1" physicalName="nome" precision="30" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+       <remarks></remarks>
+      </column>
+      <column id="COL17" populated="true" UUID="f6ec500b-4f04-4acf-9bf2-f0d511568ffc" autoIncrement="false" name="celular" nullable="1" physicalName="celular" precision="30" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+       <remarks></remarks>
+      </column>
+      <column id="COL18" populated="true" UUID="008fedf0-bb67-4339-ad34-ed08a5740a03" autoIncrement="false" name="cpf" nullable="1" physicalName="cpf" precision="14" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+       <remarks></remarks>
+      </column>
+      <column id="COL19" populated="true" UUID="597cc608-777d-42d5-85b2-a85dd6fd5914" autoIncrement="false" name="email" nullable="1" physicalName="email" precision="30" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+       <remarks></remarks>
+      </column>
+      <column id="COL20" populated="true" UUID="3778616d-bdd2-412b-b63a-6c0a68b962f4" autoIncrement="false" name="preferências" nullable="1" physicalName="preferências" precision="30" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+       <remarks></remarks>
+      </column>
+      </folder>
+      <folder id="FOLTAB143" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+      </folder>
+      <folder id="FOLTAB142" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+      </folder>
+      <folder id="FOLTAB144" populated="true" name="Indices" physicalName="Indices" type="4">
+      <index id="IDX21" populated="true" UUID="694cbe2a-a359-487d-9cfa-dda209b1b4fe" clustered="false" name="clientes_PK" physicalName="clientes_PK" primaryKeyIndex="true" qualifier="" unique="true" >
+       <index-column id="IDC22" populated="true" UUID="2cc37566-594c-4f0c-9a24-1872c866e131" ascendingOrDescending="UNSPECIFIED" column-ref="COL15" name="id_cliente" physicalName="id_cliente" />
+      </index>
+     </folder>
+    </table>
+    <table id="TAB23" populated="true" UUID="bb418b51-50b1-4834-b8da-5d2d49e293cf" name="funcionario" objectType="TABLE" physicalName="funcionario" >
+     <remarks></remarks>
+     <folder id="FOLTAB231" populated="true" name="Columns" physicalName="Columns" type="1">
+      <column id="COL24" populated="true" UUID="3405a6db-ce22-4f7c-abfc-8972bd8d8d0c" autoIncrement="true" name="id_cargo" nullable="0" physicalName="id_cargo" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="INT" type="4" >
+       <remarks></remarks>
+      </column>
+      <column id="COL25" populated="true" UUID="ab1fdee7-ad26-4249-a89e-bba435f7a4b3" autoIncrement="false" name="cpf" nullable="1" physicalName="cpf" precision="30" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+       <remarks></remarks>
+      </column>
+      <column id="COL26" populated="true" UUID="2727d677-4e1b-4636-828c-40449e79c5fe" autoIncrement="false" name="endereco" nullable="1" physicalName="endereco" precision="14" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+       <remarks></remarks>
+      </column>
+      <column id="COL27" populated="true" UUID="6f6265da-8ad5-436e-94f3-da296a61acda" autoIncrement="false" name="senha" nullable="1" physicalName="senha" precision="30" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+       <remarks></remarks>
+      </column>
+      </folder>
+      <folder id="FOLTAB233" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+      </folder>
+      <folder id="FOLTAB232" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+      </folder>
+      <folder id="FOLTAB234" populated="true" name="Indices" physicalName="Indices" type="4">
+      <index id="IDX28" populated="true" UUID="f0492dda-d669-4e6c-98c8-9018b1b26c7f" clustered="false" name="funcionario_PK" physicalName="funcionario_PK" primaryKeyIndex="true" qualifier="" unique="true" >
+       <index-column id="IDC29" populated="true" UUID="5babf2f2-1bc7-4618-b14c-8039477ec4a8" ascendingOrDescending="UNSPECIFIED" column-ref="COL24" name="id_cargo" physicalName="id_cargo" />
+      </index>
+     </folder>
+    </table>
+    <table id="TAB30" populated="true" UUID="0ea05be8-30fd-4aee-882a-80e52da22023" name="notícias" objectType="TABLE" physicalName="notícias" >
+     <remarks></remarks>
+     <folder id="FOLTAB301" populated="true" name="Columns" physicalName="Columns" type="1">
+      <column id="COL31" populated="true" UUID="9582b695-d84c-4a15-9950-5488d1f53431" autoIncrement="true" name="id" nullable="0" physicalName="id" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="INT" type="4" >
+       <remarks></remarks>
+      </column>
+      <column id="COL32" populated="true" UUID="fa7c13d8-9871-45bd-a994-c454088bb1b0" autoIncrement="false" name="texto_noticias" nullable="1" physicalName="texto_noticias" precision="30" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+       <remarks></remarks>
+      </column>
+      </folder>
+      <folder id="FOLTAB303" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+      </folder>
+      <folder id="FOLTAB302" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+      </folder>
+      <folder id="FOLTAB304" populated="true" name="Indices" physicalName="Indices" type="4">
+      <index id="IDX33" populated="true" UUID="d7cd3f1d-460d-4bf2-b921-78aa9aac0afe" clustered="false" name="notícias_PK" physicalName="notícias_PK" primaryKeyIndex="true" qualifier="" unique="true" >
+       <index-column id="IDC34" populated="true" UUID="daeb28a6-8ed4-4607-9d71-a38184dbe8de" ascendingOrDescending="UNSPECIFIED" column-ref="COL31" name="id" physicalName="id" />
+      </index>
+     </folder>
+    </table>
+   </catalog>
+   <catalog id="CAT35" populated="false" UUID="5b633704-dd04-4603-a6e7-12d07e4b8176" name="construtora" nativeTerm="database" physicalName="construtora" >
+   </catalog>
+   <catalog id="CAT36" populated="false" UUID="abf25b45-490a-4e0b-ab52-1ebdca903bb0" name="information_schema" nativeTerm="database" physicalName="information_schema" >
+   </catalog>
+   <catalog id="CAT37" populated="false" UUID="6561029e-3266-48d5-ab25-c5b25c34475d" name="lancheteria" nativeTerm="database" physicalName="lancheteria" >
+   </catalog>
+   <catalog id="CAT38" populated="false" UUID="77d342c1-a75a-4154-9963-3d25cc222a3b" name="lancheteria_luciano" nativeTerm="database" physicalName="lancheteria_luciano" >
+   </catalog>
+   <catalog id="CAT39" populated="false" UUID="25f330bc-5060-45da-b462-c03fcbf2daa5" name="lancheteria_uc9" nativeTerm="database" physicalName="lancheteria_uc9" >
+   </catalog>
+   <catalog id="CAT40" populated="false" UUID="1d4ddfdc-8852-41ab-8773-328a7174820a" name="lanchonete_final" nativeTerm="database" physicalName="lanchonete_final" >
+   </catalog>
+   <catalog id="CAT41" populated="false" UUID="16ca4d7e-7a7b-4245-af97-357f610976f5" name="locadora" nativeTerm="database" physicalName="locadora" >
+   </catalog>
+   <catalog id="CAT42" populated="false" UUID="1db08789-358f-4330-a067-3f2b17028e4c" name="locadora_nova" nativeTerm="database" physicalName="locadora_nova" >
+   </catalog>
+   <catalog id="CAT43" populated="false" UUID="bd853a94-9f94-4c61-b612-690cdb4114b1" name="mobile" nativeTerm="database" physicalName="mobile" >
+   </catalog>
+   <catalog id="CAT44" populated="false" UUID="07f10316-5347-4451-ae14-9f6ffd63b07a" name="mysql" nativeTerm="database" physicalName="mysql" >
+   </catalog>
+   <catalog id="CAT45" populated="false" UUID="ca040bf2-5256-44c8-b87c-e7d1629ceb56" name="performance_schema" nativeTerm="database" physicalName="performance_schema" >
+   </catalog>
+   <catalog id="CAT46" populated="false" UUID="52bb2446-4c6b-4ccb-a8fb-eff08570c295" name="phpmyadmin" nativeTerm="database" physicalName="phpmyadmin" >
+   </catalog>
+   <catalog id="CAT47" populated="false" UUID="bf720b64-f1f4-4626-ba0f-0dc9a506d88f" name="pizzaria" nativeTerm="database" physicalName="pizzaria" >
+   </catalog>
+   <catalog id="CAT48" populated="false" UUID="d3863157-eaab-48bf-8a93-322183be6bb0" name="projemobile" nativeTerm="database" physicalName="projemobile" >
+   </catalog>
+   <catalog id="CAT49" populated="false" UUID="4a11eaa1-0f01-40e0-8664-b8da27ce2b94" name="projetoapi" nativeTerm="database" physicalName="projetoapi" >
+   </catalog>
+   <catalog id="CAT50" populated="false" UUID="067ef52a-5eeb-4257-aafd-984e17608eaa" name="projmobile" nativeTerm="database" physicalName="projmobile" >
+   </catalog>
+   <catalog id="CAT51" populated="false" UUID="0917185e-56c5-4a4f-8e03-98289b3c617f" name="quickpat" nativeTerm="database" physicalName="quickpat" >
+   </catalog>
+   <catalog id="CAT52" populated="false" UUID="97a4eb4a-c573-4c53-b6f6-d16e63a82dd6" name="quickpatresumido" nativeTerm="database" physicalName="quickpatresumido" >
+   </catalog>
+   <catalog id="CAT53" populated="false" UUID="2766e488-9922-4cbc-aee0-67926ddd0e05" name="test" nativeTerm="database" physicalName="test" >
+   </catalog>
+   <catalog id="CAT54" populated="false" UUID="164b9f47-6ab7-4af6-8edf-a884a8d81d3c" name="teste" nativeTerm="database" physicalName="teste" >
+   </catalog>
+   <catalog id="CAT55" populated="false" UUID="22cecd72-1ca5-43c5-ad3a-b827e6dde540" name="uc13" nativeTerm="database" physicalName="uc13" >
+   </catalog>
+   <catalog id="CAT56" populated="false" UUID="2055be6f-33a5-4cd1-b662-cc6f08cce227" name="uc9teste" nativeTerm="database" physicalName="uc9teste" >
+   </catalog>
+   <catalog id="CAT57" populated="false" UUID="87481813-f80f-41ae-badd-f7520a26a5fb" name="veiculos" nativeTerm="database" physicalName="veiculos" >
+   </catalog>
+   <catalog id="CAT58" populated="false" UUID="795cbf67-8cbd-4d4c-a15e-fbb55d70ad84" name="vendas_erp" nativeTerm="database" physicalName="vendas_erp" >
+   </catalog>
+   <catalog id="CAT59" populated="false" UUID="4b1c3ed3-0135-466a-bc29-9b34ae58624b" name="vishferro" nativeTerm="database" physicalName="vishferro" >
+   </catalog>
+   <relationships>
+   </relationships>
+  </database>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB61" populated="true" UUID="9885b683-dd1d-499d-8fbc-71eb504698f0" name="cargo" objectType="TABLE" physicalName="cargo" >
+   <remarks></remarks>
+   <folder id="FOLTAB611" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL62" populated="true" UUID="63eef05c-6aaa-4bb2-a3f4-8ce1130def3d" autoIncrement="true" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" source-column-ref="COL10" sourceDataTypeName="INT" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL63" populated="true" UUID="52aa590b-7347-41c8-baac-fb21b89cd037" autoIncrement="false" defaultValue="" name="id_cargo" nullable="0" physicalName="id_cargo" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="INT" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL64" populated="true" UUID="7445b924-c526-4f2d-9dc8-d39b96462a0b" autoIncrement="false" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="30" referenceCount="1" scale="0" source-column-ref="COL11" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB613" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB612" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB614" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX65" populated="true" UUID="9c49b8a3-010a-433d-9996-92996bb9611b" clustered="false" name="cargo_PK" physicalName="cargo_pk" primaryKeyIndex="true" qualifier="" unique="true" >
+     <index-column id="IDC66" populated="true" UUID="5c29bcc1-2477-4fe0-980c-3ea83512d7c0" ascendingOrDescending="UNSPECIFIED" column-ref="COL62" name="id" physicalName="id" />
+     <index-column id="IDC67" populated="true" UUID="e348b579-20c3-4f8b-8111-6a40194944bb" ascendingOrDescending="UNSPECIFIED" column-ref="COL63" name="id_cargo" physicalName="id_cargo" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB68" populated="true" UUID="112ae5b9-7257-4ef3-8a5b-a19ca6b1f743" name="clientes" objectType="TABLE" physicalName="clientes" >
+   <remarks></remarks>
+   <folder id="FOLTAB681" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL69" populated="true" UUID="7c073004-1d6e-4232-a98c-034a66020196" autoIncrement="true" defaultValue="" name="id_cliente" nullable="0" physicalName="id_cliente" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" source-column-ref="COL15" sourceDataTypeName="INT" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL70" populated="true" UUID="7094c652-0da6-4a17-ae4a-507cfbed7503" autoIncrement="false" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="30" referenceCount="1" scale="0" source-column-ref="COL16" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL71" populated="true" UUID="5245ee46-55bb-4fbf-9f6a-d50fd839a193" autoIncrement="false" defaultValue="" name="celular" nullable="0" physicalName="celular" precision="30" referenceCount="1" scale="0" source-column-ref="COL17" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL72" populated="true" UUID="42423f21-07c9-448e-8e63-15ad3a64c4ee" autoIncrement="false" defaultValue="" name="cpf" nullable="0" physicalName="cpf" precision="14" referenceCount="1" scale="0" source-column-ref="COL18" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL73" populated="true" UUID="627e4c0d-7bd3-4eae-9b16-bc453bd01f90" autoIncrement="false" defaultValue="" name="email" nullable="0" physicalName="email" precision="30" referenceCount="1" scale="0" source-column-ref="COL19" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL74" populated="true" UUID="ef9badc0-4d7f-4430-9fe8-95033d9a73db" autoIncrement="false" autoIncrementSequenceName="clientes_preferências_seq" defaultValue="" name="preferências" nullable="0" physicalName="preferências" precision="30" referenceCount="1" scale="0" source-column-ref="COL20" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB683" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB682" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB684" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX75" populated="true" UUID="c158b838-e635-4840-9bb3-5467cdf4af88" clustered="false" name="clientes_PK" physicalName="clientes_pk" primaryKeyIndex="true" qualifier="" unique="true" >
+     <index-column id="IDC76" populated="true" UUID="92f21948-6535-44f9-9aa5-ed8c0ef0f534" ascendingOrDescending="UNSPECIFIED" column-ref="COL69" name="id_cliente" physicalName="id_cliente" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB77" populated="true" UUID="244dfd8c-e978-40cf-8843-bc0e91ac1ffd" name="funcionario" objectType="TABLE" physicalName="funcionario" >
+   <remarks></remarks>
+   <folder id="FOLTAB771" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL78" populated="true" UUID="aade3128-4bce-44f9-8af6-8f9274c8376e" autoIncrement="true" defaultValue="" name="id_cargo" nullable="0" physicalName="id_cargo" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" source-column-ref="COL24" sourceDataTypeName="INT" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL79" populated="true" UUID="9451388f-467c-4e01-a1e2-5826b2f72834" autoIncrement="false" defaultValue="" name="cpf" nullable="0" physicalName="cpf" precision="30" referenceCount="1" scale="0" source-column-ref="COL25" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL80" populated="true" UUID="6d4fc060-24a3-44e6-bc7c-b85fa7aa9dbb" autoIncrement="false" defaultValue="" name="endereco" nullable="0" physicalName="endereco" precision="14" referenceCount="1" scale="0" source-column-ref="COL26" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL81" populated="true" UUID="0106067b-9432-4021-9b65-fc36c8a9cb91" autoIncrement="false" defaultValue="" name="senha" nullable="0" physicalName="senha" precision="30" referenceCount="1" scale="0" source-column-ref="COL27" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB773" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB772" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB774" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX82" populated="true" UUID="d1456fe6-f69a-4dcf-b14a-8cd12b550be3" clustered="false" name="funcionario_PK" physicalName="funcionario_pk" primaryKeyIndex="true" qualifier="" unique="true" >
+     <index-column id="IDC83" populated="true" UUID="95dbefd0-67f1-444f-927a-1943b420a09c" ascendingOrDescending="UNSPECIFIED" column-ref="COL78" name="id_cargo" physicalName="id_cargo" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB84" populated="true" UUID="d8e9be9c-37c6-487f-8a23-b1a7ab773f57" name="notícias" objectType="TABLE" physicalName="notcias" >
+   <remarks></remarks>
+   <folder id="FOLTAB841" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL85" populated="true" UUID="d1ac1802-7c12-44ee-b178-0cc3f362a1d0" autoIncrement="true" autoIncrementSequenceName="notícias_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" source-column-ref="COL31" sourceDataTypeName="INT" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL86" populated="true" UUID="9200a334-490a-444d-8853-10e5f7773a4d" autoIncrement="false" defaultValue="" name="id_cliente" nullable="0" physicalName="id_cliente" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="INT" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL87" populated="true" UUID="576755c8-e517-42e6-9157-e0ba4426a90c" autoIncrement="false" autoIncrementSequenceName="notícias_texto_noticias_seq" defaultValue="" name="texto_noticias" nullable="0" physicalName="texto_noticias" precision="30" referenceCount="1" scale="0" source-column-ref="COL32" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB843" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB842" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB844" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX88" populated="true" UUID="d9627eca-042e-4f81-8724-787d6d0193a5" clustered="false" name="notícias_PK" physicalName="notícias_pk" primaryKeyIndex="true" qualifier="" unique="true" >
+     <index-column id="IDC89" populated="true" UUID="2b7ba865-1cce-4f35-a813-a81a491230ac" ascendingOrDescending="UNSPECIFIED" column-ref="COL85" name="id" physicalName="id" />
+     <index-column id="IDC90" populated="true" UUID="347714f2-5699-4c0e-a86a-3f4c9c26bb7b" ascendingOrDescending="UNSPECIFIED" column-ref="COL86" name="id_cliente" physicalName="id_cliente" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL91" populated="true" UUID="4b95a4b8-fed8-4c5c-b133-475c34ab3603" deferrability="7" deleteRule="3" fk-table-ref="TAB84" fkCardinality="7" identifying="true" name="clientes_notcias_fk" physicalName="clientes_notcias_fk" pk-table-ref="TAB68" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP92" populated="true" UUID="f34a01fa-8ecb-4f0a-92dd-ffefc0c81260" fk-column-ref="COL86" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL69" />
+   </relationship>
+   <relationship id="REL93" populated="true" UUID="e36e0129-b2c9-4768-951d-2594a9426dfa" deferrability="7" deleteRule="3" fk-table-ref="TAB61" fkCardinality="7" identifying="true" name="funcionario_cargo_fk" physicalName="funcionario_cargo_fk" pk-table-ref="TAB77" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP94" populated="true" UUID="3de2e863-f1ed-4b96-b3e0-1567271bc736" fk-column-ref="COL63" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL78" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.MySqlDDLGenerator" allow-connection="false"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB61" x="1026" y="214" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB68" x="120" y="207" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB77" x="694" y="216" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB84" x="440" y="87" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL93" pkConnection="0.2823529411764706" fkConnection="0.3380281690140845" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL91" pkConnection="0.11504424778761062" fkConnection="1.0" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="65"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
